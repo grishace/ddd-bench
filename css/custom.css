@@ -23,3 +23,11 @@ img[src*="#align-hack"] {
   vertical-align: middle;
   padding-left: 10px;
 }
+
+.fragment.dn {
+  display: none !important;
+}
+
+.fragment.dn.visible {
+  display: inline !important;
+}

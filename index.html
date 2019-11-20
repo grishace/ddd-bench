@@ -67,7 +67,85 @@ Denver Dev Day<br/>
 November 22, 2019</small></p>
 </section>
 <section >
-<h4>Questions?</h4>
+<section >
+<h3>TIMTOWTDI</h3>
+<p><img src="./images/perl-camel.png" alt="Perl motto" /></p>
+</section>
+<section >
+<p><img src="./images/premature-optimization.jpg" alt="Knuth quote" /></p>
+</section>
+</section>
+<section >
+<h3><span class="fragment">Micro-</span>Benchmarking</h3>
+<ul>
+<span class="fragment"><li>DateTime.Now&nbsp;<span class="fragment" style="color:gray;">&mdash;&nbsp;na&iuml;ve</span></li></span>
+<span class="fragment"><li>System.Diagnostics.Stopwatch&nbsp;<span class="fragment" style="color:gray;">&mdash;&nbsp;better</span></li></span>
+<span class="fragment"><li>BenchmarkDotNet</li></span>
+</ul>
+</section>
+<section >
+<section >
+<h3>BenchmarkDotNet</h3>
+<p><img src="./images/benchmarkdotnet-logo.png" alt="BenchmarkDotNet logo" /></p>
+</section>
+<section >
+<h3>BenchmarkDotNet</h3>
+<ul>
+<li>.NET Framework (4.6+), .NET Core (2.0+), Mono, CoreRT</li>
+<li>C#, F#, Visual Basic</li>
+<li>Windows, Linux, macOS</li>
+</ul>
+</section>
+<section >
+<h3>BenchmarkDotNet</h3>
+<ul>
+<li>Standard benchmarking routine</li>
+<li>Execution control</li>
+<li>Statistics</li>
+<li>Relative performance</li>
+<li>Memory diagnostics</li>
+<li>Parametrization</li>
+<li>Powerful reporting system</li>
+</ul>
+<aside class="notes">
+Standard benchmarking routine:<br/>
+generating an isolated project per each benchmark method; <br/>
+auto-selection of iteration amount; warmup; overhead evaluation; and so on<br/>
+Execution control: <br/>
+BenchmarkDotNet tries to choose the best possible way to evaluate performance, but you can also <br/>
+manually control amount of iterations, switch between cold start and warmed state, set the accuracy level,<br/>
+tune GC parameters, change environment variables, and more<br/>
+Statistics:<br/>
+by default, you will see the most important statistics like mean and standard deviation; <br/>
+but you can also manually ask for min/max values, confidence intervals, skewness, kurtosis, quartile, <br/>
+percentiles, or define own metrics<br/>
+Comparing environments:<br/>
+Easy way to compare different environments (x86 vs x64, LegacyJit vs RyuJit, Mono vs .NET Core, and so on)<br/>
+Relative performance:<br/>
+you can easily evaluate difference between different methods of environments<br/>
+Memory diagnostics: <br/>
+the library not only measure performance of your code, but also prints information about memory traffic <br/>
+and amount of GC collections<br/>
+Disassembly diagnostics:<br/>
+you can ask for an assembly listing with the help of single additional attribute<br/>
+Parametrization:<br/>
+performance can be evaluated for different sets of input parameters like in popular unit test frameworks<br/>
+Environment information:<br/>
+when your share performance results, it's very important to share information about your environment; <br/>
+BenchmarkDotNet automatically prints the exact version of your OS and processor; amount of physical CPU, <br/>
+physical cores, and logic cores; hypervisor (if you use it); frequency of the hardware timer; the JIT-compiler <br/>
+version; and more<br/>
+Command-line support:<br/>
+you can manage thousands of benchmark, group them by categories, filter and run them from command line<br/>
+Powerful reporting system: it's possible to export benchmark results to markdown, csv, html, plain text, png plots<br/>
+</aside>
+</section>
+</section>
+<section >
+<h3>Demo</h3>
+</section>
+<section >
+<h3>Questions?</h3>
 <p><a href="https://github.com/grishace/ddd-bench"><img src="./images/qrcode.png" alt="https://github.com/grishace/ddd-bench" /></a><br/>
 <a href="https://github.com/grishace/ddd-bench"><a href="https://github.com/grishace/ddd-bench">https://github.com/grishace/ddd-bench</a></a></p>
 <p><a href="https://benchmarkdotnet.org/"><a href="https://benchmarkdotnet.org/">https://benchmarkdotnet.org/</a></a></p>
