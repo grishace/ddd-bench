@@ -15,10 +15,17 @@ type Test() =
 
     [<Benchmark(Baseline=true)>]
     member this.ListOfInt () =
-        let l = List<int>()
+        let list = List<int>()
         for _ in 1..this.Num do
-            l.Add(rnd.Next(this.Num))
-        l
+            list.Add(rnd.Next(this.Num))
+        list
+
+    [<Benchmark>]
+    member this.ImmutableListOfInt () =
+        let builder = ImmutableList.CreateBuilder<int>()
+        for _ in 1..this.Num do
+            builder.Add(rnd.Next(this.Num))
+        builder.ToImmutable()
 
     [<Benchmark>]
     member this.IntList () =
