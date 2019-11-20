@@ -109,6 +109,13 @@ November 22, 2019</small>
 
 ***
 
+### Book
+
+![Pro .NET Benchmarking: The Art of Performance Measurement](./images/benchmarking-book.jpg)<br/>
+[Pro .NET Benchmarking: The Art of Performance Measurement](https://www.apress.com/us/book/9781484249406)
+
+***
+
 ### Questions?
 
 [![https://github.com/grishace/ddd-bench](./images/qrcode.png)](https://github.com/grishace/ddd-bench)<br/>
